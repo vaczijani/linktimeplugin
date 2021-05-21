@@ -22,7 +22,6 @@ PluginProxy<Plugin1> plugin1;  // static object registers on creation
 usage:
 ```cpp
 typedef RegisteredPluginProxy<Plugin> Plugins;
-for (Plugins::iterator it = Plugins::begin(); it != Plugins::end(); ++it) {
-		(*it)->plugin()->func();
-	}
+for (Plugins::iterator it = Plugins::begin(); it != Plugins::end(); ++it)
+  (*it)->plugin()->func();
 ```
